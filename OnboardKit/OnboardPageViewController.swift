@@ -160,7 +160,7 @@ internal final class OnboardPageViewController: UIViewController {
   }
 
   private func configureImageView(_ imageName: String?) {
-    if let imageName = imageName, let image = UIImage(named: imageName) {
+    if let imageName = imageName, let image = UIImage.gif(name: imageName) {
       imageView.image = image
       imageView.heightAnchor.constraint(equalTo: pageStackView.heightAnchor, multiplier: 0.5).isActive = true
     } else {
